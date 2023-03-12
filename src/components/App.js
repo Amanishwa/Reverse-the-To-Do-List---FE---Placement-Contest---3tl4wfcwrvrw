@@ -24,9 +24,9 @@ function App() {
     createdAt: '18:00',
   }
   ]);
-
-const reverseOrder = () => {
-    setTodos((prevTodos) => prevTodos.reverse());
+  
+  const reverseOrder = () => {
+    setTodos([...todos].reverse());
   }
 
   return (
@@ -34,6 +34,10 @@ const reverseOrder = () => {
       <button onclick={reverseOrder}>Reverse</button>
       <table>
         <tbody>
+          {todos.map((todo)=>(
+            <ToDo key={todo.id} todoId={todp.id}
+            createdAt = {todo.createdAt}/>
+          ))}
         </tbody>
       </table>
     </div>
