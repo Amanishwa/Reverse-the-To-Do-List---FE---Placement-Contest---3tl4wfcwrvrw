@@ -27,11 +27,7 @@ function App() {
   
   const reverseOrder = () => {
     setTodos([...todos].reverse());
-<<<<<<< HEAD
   };
-=======
-  }
->>>>>>> 0660cbc34e22616386a05a06e0ef047e4cf9a1bd
 
   return (
     <div id="main">
