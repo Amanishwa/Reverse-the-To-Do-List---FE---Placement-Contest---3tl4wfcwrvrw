@@ -12,7 +12,7 @@ function ToDo({todoId, createdAt}) {
     <td>
       <p>createdAt</p>
     </td>
-  </tr>)
+  </tr>);
 }
 
 function App() {
