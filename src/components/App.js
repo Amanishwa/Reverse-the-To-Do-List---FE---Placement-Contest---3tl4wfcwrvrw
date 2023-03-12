@@ -25,9 +25,13 @@ function App() {
   }
   ]);
 
+const reverseOrder = () => {
+    setTodos((prevTodos) => prevTodos.reverse());
+  }
+
   return (
     <div id="main">
-      <button>Reverse</button>
+      <button onclick={reverseOrder}>Reverse</button>
       <table>
         <tbody>
         </tbody>
