@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
 import '../styles/App.css';
 
-function ToDo() {
+function ToDo({todoId, createdAt}) {
   return (<tr>
     <td>
-      <p>id</p>
+      <p>{todoId}</p>
     </td>
     <td>
-      <input />
+      <input placeholder="Enter your task"/>
     </td>
     <td>
       <p>createdAt</p>
